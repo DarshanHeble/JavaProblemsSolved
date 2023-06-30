@@ -20,26 +20,24 @@
 
 public class BestTimeBuySell {
     public static int maxProfit(int prices[]) {
-        int maxProfit = 0, profit = 0;
+        int maxProfit = 0, minprice = 0;
         for (int i = 0; i < prices.length; i++) {
-            for (int j = i + 1; j < prices.length; j++) {
-                if (prices[i] < prices[j]) {
-                    profit = prices[j] - prices[i];
-                }
-                if (profit > maxProfit) {
-                    maxProfit = profit;
-                }
+
+            if (prices[i] < minprice) {
+                minprice = prices[i];
+            } else if (prices[i] - minprice > maxProfit) {
+                maxProfit = prices[i] - minprice;
+            }
+
+            if (minprice > maxProfit) {
+                maxProfit = minprice;
             }
         }
-        if (maxProfit = 0) {
-            return 0;
-        } else {
-            return maxProfit;
-        }
+        return maxProfit;
     }
 
     public static void main(String[] args) {
         int prices[] = { 7, 1, 5, 3, 6, 4 };
-        maxProfit(prices);
+        System.out.println(maxProfit(prices));
     }
 }
