@@ -20,17 +20,13 @@
 
 public class BestTimeBuySell {
     public static int maxProfit(int prices[]) {
-        int maxProfit = 0, minprice = 0;
+        int maxProfit = 0, minprice = Integer.MAX_VALUE;
         for (int i = 0; i < prices.length; i++) {
 
             if (prices[i] < minprice) {
                 minprice = prices[i];
             } else if (prices[i] - minprice > maxProfit) {
                 maxProfit = prices[i] - minprice;
-            }
-
-            if (minprice > maxProfit) {
-                maxProfit = minprice;
             }
         }
         return maxProfit;
