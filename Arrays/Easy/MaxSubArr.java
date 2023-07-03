@@ -18,7 +18,7 @@
 // Output: 23
 // Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
 
-public class SubArrWithLargestSum {
+public class MaxSubArr {
     public static int largestSum(int a[]) {
         int max = Integer.MIN_VALUE, sum = 0;
         for (int i = 0; i < a.length; i++) {
