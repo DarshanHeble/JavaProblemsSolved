@@ -10,5 +10,7 @@
 // Output : arr[] = {2, 1, 5, 4}
 
 public class reverseArr {
+    public static void main(String[] args) {
 
+    }
 }

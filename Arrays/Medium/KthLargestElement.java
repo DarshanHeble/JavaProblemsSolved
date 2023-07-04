@@ -19,6 +19,8 @@ import java.util.*;
 
 public class KthLargestElement {
     public static int kthLargest(int nums[], int k) {
+
+        // create a PriorityQueue for a min heap
         PriorityQueue<Integer> pq = new PriorityQueue<>();
 
         // adding k elements to min heap
@@ -27,17 +29,20 @@ public class KthLargestElement {
         }
 
         for (int i = k; i < nums.length; i++) {
+
+            // if the nums[i] is greater then remove 1st pq element and add nums[i] to pq
             if (pq.peek() < nums[i]) {
                 pq.poll();
                 pq.add(nums[i]);
             }
         }
+
+        // return 1ts element of pq
         return pq.peek();
     }
 
     public static void main(String[] args) {
         int nums[] = { 3, 2, 1, 5, 6, 4 }, k = 3;
-
         System.out.println(kthLargest(nums, k));
     }
 }

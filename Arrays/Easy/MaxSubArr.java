@@ -20,7 +20,11 @@
 
 public class MaxSubArr {
     public static int largestSum(int a[]) {
+
+        // Initialize the max variable by a maximum value for integer and sum to 0
         int max = Integer.MIN_VALUE, sum = 0;
+
+        // finding for maximun sub array 
         for (int i = 0; i < a.length; i++) {
             sum += a[i];
             max = Math.max(sum, max);

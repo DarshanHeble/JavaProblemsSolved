@@ -15,8 +15,12 @@
 
 public class MaxMin {
     public static void main(String[] args) {
+
+        // Initialize the array with its elements
         int a[] = { 3, 5, 4, 1, 9 };
         int Max, Min;
+
+        // Calculating Max and min of 1st 2 elements of array
         if (a[0] > a[1]) {
             Max = a[0];
             Min = a[1];
@@ -24,6 +28,8 @@ public class MaxMin {
             Max = a[1];
             Min = a[0];
         }
+
+        // Calculating Max and min of rest of the elements of array
         for (int i = 2; i < a.length; i++) {
             if (a[i] > Max) {
                 Max = a[i];
@@ -31,6 +37,8 @@ public class MaxMin {
                 Min = a[i];
             }
         }
+
+        // Print the maximum and minimun of array
         System.out.println("Maximum No is " + Max + "\nMinimum No is " + Min);
     }
 }

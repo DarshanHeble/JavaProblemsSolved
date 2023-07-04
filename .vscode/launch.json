@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "BestTimeBuySell",
+            "request": "launch",
+            "mainClass": "BestTimeBuySell",
+            "projectName": "JavaProblemsSolved_83c6e80b"
+        },
+        {
+            "type": "java",
+            "name": "ChocDistribution",
+            "request": "launch",
+            "mainClass": "ChocDistribution",
+            "projectName": "JavaProblemsSolved_83c6e80b"
+        },
+        {
+            "type": "java",
+            "name": "KthLargestElement",
+            "request": "launch",
+            "mainClass": "KthLargestElement",
+            "projectName": "JavaProblemsSolved_83c6e80b"
+        },
+        {
+            "type": "java",
+            "name": "MaxMin",
+            "request": "launch",
+            "mainClass": "MaxMin",
+            "projectName": "JavaProblemsSolved_83c6e80b"
+        },
+        {
+            "type": "java",
+            "name": "MaxSubArr",
+            "request": "launch",
+            "mainClass": "MaxSubArr",
+            "projectName": "JavaProblemsSolved_83c6e80b"
+        },
+        {
+            "type": "java",
+            "name": "trapRainWater",
+            "request": "launch",
+            "mainClass": "trapRainWater",
+            "projectName": "JavaProblemsSolved_83c6e80b"
+        }
+    ]
+}
