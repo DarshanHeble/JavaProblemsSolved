@@ -22,6 +22,28 @@
 // Input: nums = [1,1,5]
 // Output: [1,5,1]
 
-public class NextPermutation {
+import java.util.Arrays;
 
+public class NextPermutation {
+    public static void print(int nums[]) {
+        for (int i = 0; i < nums.length; i++) {
+            System.out.println(nums[i]);
+        }
+    }
+
+    public static void main(String[] args) {
+        int nums[] = { 1, 2, 3 };
+
+        for (int i = nums.length - 2; i <= 0; i--) {
+            if (nums[i] < nums[i + 1]) {
+                int temp = nums[i];
+                nums[i] = nums[i + 1];
+                nums[i + 1] = temp;
+
+                print(nums);
+            }
+        }
+        Arrays.sort(nums);
+        print(nums);
+    }
 }
