@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Containsdup",
+            "request": "launch",
+            "mainClass": "Containsdup",
+            "projectName": "JavaProblemsSolved_83c6e80b"
+        },
+        {
+            "type": "java",
+            "name": "reverseArr",
+            "request": "launch",
+            "mainClass": "reverseArr",
+            "projectName": "JavaProblemsSolved_83c6e80b"
+        },
+        {
+            "type": "java",
             "name": "NextPermutation",
             "request": "launch",
             "mainClass": "NextPermutation",
