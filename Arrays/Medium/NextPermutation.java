@@ -34,10 +34,10 @@ public class NextPermutation {
     public static int[] nextPermutation(int nums[]) {
         for (int i = nums.length - 2; i <= 0; i--) {
             if (nums[i] < nums[i + 1]) {
+
                 int temp = nums[i];
                 nums[i] = nums[i + 1];
                 nums[i + 1] = temp;
-
                 return nums;
             }
         }
