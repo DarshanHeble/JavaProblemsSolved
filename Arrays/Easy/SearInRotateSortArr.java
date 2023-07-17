@@ -23,5 +23,25 @@
 // Output: -1
 
 public class SearInRotateSortArr {
+    public static void main(String[] args) {
+        int nums[] = { 4, 5, 6, 7, 0, 1, 2 }, target = 0;
 
+        System.out.println(searchTheTarget(nums, target));
+    }
+
+    public static int searchTheTarget(int a[], int target) {
+        int left = 0, right = a.length - 1;
+        while (left < right) {
+            int mid = (left + right) / 2;
+            if (a[mid] == target) {
+                return mid;
+            } else if (a[left] < a[mid] && a[left] <= target && a[mid] < target) {
+                right = a[mid - 1];
+            } else {
+                left = a[mid + 1];
+            }
+        }
+        return -1;
+
+    }
 }
