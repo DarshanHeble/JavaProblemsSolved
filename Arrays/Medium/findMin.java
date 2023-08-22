@@ -20,7 +20,7 @@ public class findMin {
         while (low < high) {
             int mid = (low + high) / 2;
 
-            if (a[mid] < a[high]) {
+            if (a[mid] > a[high]) {
                 
             }
         }
